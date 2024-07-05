@@ -1,0 +1,28 @@
+/run/initialize
+/vis/open OGL
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts 0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+
+#/vis/scene/add/scale 10 cm
+#/vis/scene/add/axes
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate 10
+/gun/particle proton
+#/vis/ogl/set/displayListLimit 5000000
+
+
+/vis/geometry/set/colour TubeLogical 0 0 0.4 0.4 .2
+/vis/geometry/set/colour PMMABox 0 0.47 0.53 0.6 .3
+/vis/geometry/set/colour BackPMMABox 0 0.47 0.53 0.6 .3
+/vis/geometry/set/colour Alsheet1LV 0 1 1 0 .2
+/vis/geometry/set/colour Alsheet2LV 0 1 1 0 .2
+

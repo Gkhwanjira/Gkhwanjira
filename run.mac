@@ -1,0 +1,11 @@
+#/run/numberOfThreads 1
+/run/initialize
+
+#/gun/momentumAmp 20 MeV
+#/gun/position 0 0 -5 m
+
+/gun/particle proton
+/gun/energy 70 MeV
+
+/run/printProgress 1000
+/run/beamOn 10000
